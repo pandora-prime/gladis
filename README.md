@@ -6,28 +6,24 @@ SPDX-License-Identifier: Apache-2.0 OR MIT
 
 # gladis
 
-![Maintenance status is "deprecated"](https://img.shields.io/badge/maintenance-deprecated-red.svg)
-[![Build](https://github.com/MicroJoe/gladis/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MicroJoe/gladis/actions/workflows/ci.yml)
-[![Latest version](https://img.shields.io/crates/v/gladis.svg)](https://crates.io/crates/gladis)
-[![Documentation](https://docs.rs/gladis/badge.svg)](https://docs.rs/gladis)
-[![License](https://img.shields.io/crates/l/gladis.svg)](https://crates.io/crates/gladis)
-[![REUSE status](https://api.reuse.software/badge/github.com/MicroJoe/gladis)](https://api.reuse.software/info/github.com/MicroJoe/gladis)
+[![Build](https://github.com/pandora-prime/rust-glade/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/pandora-prime/rust-glade/actions/workflows/ci.yml)
+[![Latest version](https://img.shields.io/crates/v/glade.svg)](https://crates.io/crates/glade)
+[![Documentation](https://docs.rs/glade/badge.svg)](https://docs.rs/glade)
+[![License](https://img.shields.io/crates/l/glade.svg)](https://crates.io/crates/glade)
+[![REUSE status](https://api.reuse.software/badge/github.com/pandora-prime/rust-glade)](https://api.reuse.software/info/github.com/pandora-prime/rust-glade)
 
 Easily import Glade-generated UI files into Rust code.
 
-**This crate is DEPRECATED.  
-Use [CompositeTemplate](https://gtk-rs.org/gtk4-rs/stable/latest/book/composite_templates.html)
-from [gtk3-macros](https://crates.io/crates/gtk3-macros)
-or [gtk4-macros](https://crates.io/crates/gtk4-macros) official GTK crates.**
+**This crate is a fork of a DEPRECATED https://github.com/gagath/gladis maintained for backward compatibility**
 
 ## Usage
 
-In order to use Gladis, you have to add the following dependencies into your
+In order to use Glade, you have to add the following dependencies into your
 project's `Cargo.toml` file:
 
 ```toml
 [dependencies]
-gladis = "2.1.2"
+glade = "2.2.0"
 ```
 
 After this is done, you can enjoy the Gladis derive!

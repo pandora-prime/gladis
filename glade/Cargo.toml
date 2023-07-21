@@ -3,8 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
 [package]
-name = "gladis_proc_macro"
-version = "2.1.2"
+name = "glade"
+version = "2.2.0"
 authors = ["Agathe Porte <microjoe@microjoe.org>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
@@ -12,16 +12,22 @@ description = "Deprecated. Use gtk-rs's CompositeTemplate derive macro instead."
 readme = "README.md"
 keywords = ["gui", "gtk", "gtk-rs", "gnome", "glade"]
 categories = ["gui"]
-repository = "https://github.com/MicroJoe/gladis"
+repository = "https://github.com/pandora-prime/rust-glade"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[lib]
-proc-macro = true
-
 [dependencies]
-syn = "1.0"
-quote = "1.0"
+glade_derive = { version = "2.2.0", optional = true, path = "../glade_derive" }
+gtk = "0.16.2"
 
 [dev-dependencies]
-gtk = "0.15"
+glade_derive = { version = "2.2.0", path = "../glade_derive" }
+gio = "0.16.7"
+
+# Relm example
+relm = "0.24.1"
+relm-derive = "0.24.0"
+
+[features]
+default = ["derive"]
+derive = ["glade_derive"]

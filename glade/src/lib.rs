@@ -98,7 +98,7 @@ pub trait Gladis {
     //! # Automatic implementation
     //!
     //! This trait wakes little sense alone, but truly show its power when used
-    //! with the [gladis_proc_macro](https://docs.rs/gladis_proc_macro) crate
+    //! with the [glade_derive](https://docs.rs/gladis_proc_macro) crate
     //! and its `#[derive(Gladis)]` macro.
     //!
     //! ```
@@ -171,7 +171,7 @@ pub trait Gladis {
 // Re-export #[derive(Gladis)].
 #[cfg(feature = "derive")]
 #[doc(hidden)]
-pub use gladis_proc_macro::Gladis;
+pub use glade_derive::Gladis;
 
 #[cfg(test)]
 mod tests {

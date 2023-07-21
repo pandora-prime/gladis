@@ -4,6 +4,6 @@
 
 [workspace]
 members = [
-    "gladis",
-    "gladis_proc_macro",
+    "glade",
+    "glade_derive",
 ]
